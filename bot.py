@@ -5,7 +5,7 @@ from telegram.ext import Updater, CommandHandler, CallbackQueryHandler, Callback
 import requests
 import json
 import random as rd
-TOKEN = 'Telegram Token Here'
+TOKEN = '<Telegram Token Here>'
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO
 )
@@ -107,7 +107,7 @@ def main():
                           port=PORT,
                           url_path=TOKEN)
     updater.bot.set_webhook(
-        "https://awesomewallbot.herokuapp.com/" + TOKEN)
+        "https://<YOUR BOT NAME>.herokuapp.com/" + TOKEN)
     # Run the bot until the user presses Ctrl-C or the process receives SIGINT,
     # SIGTERM or SIGABRT
     updater.idle()
